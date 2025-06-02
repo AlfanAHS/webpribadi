@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="container">
+    <h1 class="logo">Portofolio</h1>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <nav class="nav-menu" id="nav-menu">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#portofolio">Portofolio</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Profil Section -->
+  <section id="beranda" class="profil">
+    <div class="container profil-content">
+      <div class="profil-text">
+        <h2>Halo, saya Alfan</h2>
+        <p>Seorang yang baru belajar web Developer, baru belajar HTML, CSS, dan Javascript. 
+            Rencana mau belajar ReactJS untuk selanjutnya karena lebih modern untuk pembuatan website</p>
+        <a href="#portofolio" class="btn">Lihat Karya Saya</a>
+      </div>
+      <div class="profil-image">
+        <img src="./img/default-child.png" alt="Foto Profil" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Saya -->
+  <section id="tentang" class="section">
+    <div class="container">
+      <h2 class="section-title">Tentang Saya</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis voluptate illo amet. Veniam a culpa exercitationem quasi, iusto harum blanditiis. Praesentium, quaerat reprehenderit aspernatur ipsum laborum, nemo, soluta perspiciatis minus exercitationem nihil tempora asperiores necessitatibus est unde? Sunt ea commodi voluptatum harum ipsam ipsa ullam ab, aliquam omnis recusandae unde.</p>
+    </div>
+  </section>
+
+  <!-- Portofolio -->
+  <section id="portofolio" class="section">
+    <div class="container">
+      <h2 class="section-title">Portofolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="./img/logo.png" alt="Project 1">
+            <h3>Website Panti Asuhan</h3>
+            <p>Website informatif untuk panti asuhan berbasis HTML, CSS, dan JavaScript.</p>
+            <button class="btn-detail">Lihat Detail</button>
+        </div>
+        <div class="portfolio-item">
+            <img src="./img/logo.png" alt="Project 1">
+            <h3>Website Panti Asuhan</h3>
+            <p>Website informatif untuk panti asuhan berbasis HTML, CSS, dan JavaScript.</p>
+            <button class="btn-detail">Lihat Detail</button>
+        </div>
+        <div class="portfolio-item">
+            <img src="./img/logo.png" alt="Project 1">
+            <h3>Website Panti Asuhan</h3>
+            <p>Website informatif untuk panti asuhan berbasis HTML, CSS, dan JavaScript.</p>
+            <button class="btn-detail">Lihat Detail</button>
+        </div>
+        <div class="portfolio-item">
+            <img src="./img/logo.png" alt="Project 1">
+            <h3>Website Panti Asuhan</h3>
+            <p>Website informatif untuk panti asuhan berbasis HTML, CSS, dan JavaScript.</p>
+            <button class="btn-detail">Lihat Detail</button>
+        </div>
+        <div class="portfolio-item">
+            <img src="./img/logo.png" alt="Project 1">
+            <h3>Website Panti Asuhan</h3>
+            <p>Website informatif untuk panti asuhan berbasis HTML, CSS, dan JavaScript.</p>
+            <button class="btn-detail">Lihat Detail</button>
+        </div>
+        <div class="portfolio-item">
+            <img src="./img/logo.png" alt="Project 1">
+            <h3>Website Panti Asuhan</h3>
+            <p>Website informatif untuk panti asuhan berbasis HTML, CSS, dan JavaScript.</p>
+            <button class="btn-detail">Lihat Detail</button>
+        </div>
+        <div class="portfolio-item">
+            <img src="./img/logo.png" alt="Project 1">
+            <h3>Website Panti Asuhan</h3>
+            <p>Website informatif untuk panti asuhan berbasis HTML, CSS, dan JavaScript.</p>
+            <button class="btn-detail">Lihat Detail</button>
+        </div>
+        <div class="portfolio-item">
+            <img src="./img/logo.png" alt="Project 1">
+            <h3>Website Panti Asuhan</h3>
+            <p>Website informatif untuk panti asuhan berbasis HTML, CSS, dan JavaScript.</p>
+            <button class="btn-detail">Lihat Detail</button>
+        </div>
+        
+        <!-- Tambah item lainnya jika ada -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="section">
+    <div class="container">
+      <h2 class="section-title">Kontak</h2>
+      <form id="formKontak">
+        <input type="text" placeholder="Nama" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Pesan" rows="5" required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Jeki Developer. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Portofolio -->
+<div id="portfolioModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <img id="modalImage" src="" alt="Project Image">
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+    <div class="modal-tech">
+      <span class="tech-tag">HTML</span>
+      <span class="tech-tag">CSS</span>
+      <span class="tech-tag">JavaScript</span>
+    </div>
+    <a href="#" class="btn-modal" id="btn-modal" target="_blank">Lihat Demo</a>
+  </div>
+</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
